@@ -25,13 +25,20 @@ body {
 }
 
 #introduction {
-  width: 200px;
-  height: 200px;
   position: absolute;
   font-weight: 700;
   font-size: 0.9em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  transition: opacity 2s;
+}
+
+#browser-hint {
+  position: absolute;
+  margin-top: 30px;
+  font-size: 0.7em;
+  color: #888;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: opacity 2s;
 }
 

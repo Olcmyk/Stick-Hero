@@ -58,6 +58,7 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext("2d");
 
 const introductionElement = document.getElementById("introduction");
+const browserHintElement = document.getElementById("browser-hint");
 const perfectElement = document.getElementById("perfect");
 const restartButton = document.getElementById("restart");
 const scoreElement = document.getElementById("score");
@@ -83,6 +84,7 @@ function resetGame() {
   score = 0;
 
   introductionElement.style.opacity = 1;
+  browserHintElement.style.opacity = 1;
   perfectElement.style.opacity = 0;
   restartButton.style.display = "none";
   countdownElement.style.opacity = 0;
@@ -174,6 +176,7 @@ window.addEventListener("mousedown", function (event) {
     countdownStartTime = undefined;
     currentForce = 0;
     introductionElement.style.opacity = 0;
+    browserHintElement.style.opacity = 0;
     countdownElement.style.opacity = 1;
     countdownElement.classList.remove("warning");
     phase = "stretching";
